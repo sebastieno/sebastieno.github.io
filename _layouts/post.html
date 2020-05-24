@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section role="main" class="main">
+  <div class="container">
+    <div class="postheader {{page.categories}}">
+      <a href="{{page.url | relative_url}}" rel="bookmark">
+        <h1>{{page.title}}</h1>
+        <div class="postdate">
+          Publi&eacute; le {{ page.date | date: "%-d %B %Y" }}
+        </div>
+      </a>
+    </div>
+
+    <div class="postdata">
+      {{ content }}
+    </div>
+
+    <div class="mentions">
+      <h3>
+        Si cet article t'a plu, n'hésites pas à partager
+        <a
+          href="https://twitter.com/share"
+          class="twitter-share-button"
+          data-count="horizontal"
+          data-via="{{site.twitter_username}}"
+          data-text="{{page.title}}"
+          data-url="{{page.url | absolute_url}}}}"
+          data-hashtags="{{page.tags}}"
+          >sur Twitter</a
+        >, et si tu as des questions / remarques, n'hésites pas à me contacter
+        <a
+          href="https://twitter.com/intent/tweet?screen_name={{site.twitter_username}}"
+          class="twitter-mention-button"
+          data-url="{{page.url | absolute_url}}"
+          data-show-count="false"
+          >sur Twitter</a
+        >
+      </h3>
+    </div>
+  </div>
+</section>

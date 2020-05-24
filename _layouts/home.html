@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section role="main" class="main">
+  <div class="container">
+    {%- for post in paginator.posts -%}
+      <div class="post">
+        <div class="postheader {{post.categories}}">
+          <a  href="{{post.url | relative_url}}" rel="bookmark">
+            <h1>{{post.title}}</h1>
+            <div class='postdate'>Publi&eacute; le {{ post.date | date: "%-d %B %Y" }}</div>
+          </a>
+        </div>
+        <div class="postresume">{{post.resume}}</div>
+          <p>
+            <a  href="{{post.url | relative_url}}" class="more-link">(lire plus&#8230;)</a>
+          </p>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>      
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

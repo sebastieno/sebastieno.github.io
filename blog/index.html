@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section role="main" class="main">
+    <div class="container">
+    {%- for post in paginator.posts -%}
+        <div class="post">
+            <div class="postheader {{post.categories}}">
+                <a  href="{{post.url | relative_url}}" rel="bookmark">
+                    <h1>{{post.title}}</h1>
+                    <div class='postdate'>Publi&eacute; le {{ post.date | date: "%-d %B %Y" }}</div>
+                </a>
+            </div>
+            <div class="postresume">{{post.resume}}</div>
+            <p>
+                <a  href="{{post.url | relative_url}}" class="more-link">(lire plus&#8230;)</a>
+            </p>
+        </div>
+    {%- endfor -%}
+
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">« Nouveaux Posts</a>
+    {% endif %}
+    {% if paginator.previous_page and paginator.next_page %}
+    — 
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Anciens Posts »</a>
+    {% endif %}
+  </div>
+</section>      
