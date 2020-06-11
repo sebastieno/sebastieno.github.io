@@ -1,0 +1,32 @@
+---
+layout: post
+title: 'ADFS 2 vs ACS'
+date: 2012-04-01
+categories: federation-didentite
+resume: 'Quelles sont les différences entre ADFS 2 et ACS, hormis l''aspect On-Premise d''ADFS vs Cloud de ACS ?'
+tags: adfs acs
+---
+Hormis le fait que ADFS 2 et ACS soient respectivement des STS (Security Token Service) version On-Premise et version Cloud de Microsoft, ces deux services proposent des fonctionnalités légèrement différentes.
+
+## ADFS 2
+
+* Mapping de claims évolué grâce au Custom Attribut Store (possibilité de récupérer des claims depuis un provider custom, ex: base de données, service web, etc.)
+* Permet d’exposer un Active Directory en tant que Identity Provider
+* Customisation possible du site de fédération passive pour intégrer de la sécurisation forte (ex: Captcha, Gemalto, etc.) ou d’autres fonctionnalités avancées
+
+## Azure ACS
+
+* Intégration facilitée des providers de type réseaux sociaux
+* En fédération passive, le token SAML peut être renvoyé soit par redirection HTTP, soit par JavaScript Notify au format JSON (méthode JavaScript permettant de notifier le conteneur de la page). ADFS 2 ne propose que l'envoi par redirection HTTP.
+* Exposition d’un fichier JavaScript permettant de récupérer la liste des fournisseurs d’identité au format JSON
+* Hébergement et personnalisation de la page de sélection du fournisseur d’identité 
+* Possibilité de restreindre les fournisseurs d’identité par application 
+* Support des tokens SWT 
+
+De manière à profiter des fonctionnalités des deux services, il est possible de les combiner :
+
+* Utiliser ACS comme IDP de ADFS 2 : Permet par exemple d'exposer les providers de type réseaux sociaux au travers de ADFS (via ACS) 
+* Utiliser ADFS 2 comme IDP de ACS : Permet par exemple de renvoyer un token SAML créé par ADFS via JavaScript Notify 
+
+A bientôt.
+

@@ -1,0 +1,26 @@
+---
+layout: post
+title: 'Techdays 2013 - Monitoring et automatisation dans Windows Azure '
+date: 2013-03-20
+categories: azure
+resume: 'Retrouvez la vidéo de ma session au Microsoft Techdays 2013 ''Monitoring et automatisation dans Windows Azure''.'
+tags: td2013 conference session monitoring automatisation azure
+---
+<img src="https://farm9.staticflickr.com/8244/8574656958_7991c1db43_o.png" width="240" height="97" alt="Logo TD 2013" />
+
+J'ai eu la chance de participer aux Techdays 2013 en tant que speaker (même si je n'apparais pas sur le site MS) sur la session <a href="https://www.microsoft.com/france/mstechdays/programmes/2013/fiche-session.aspx?ID=235f567f-c342-4dc3-9a35-13d74e31ed20" target="_blank">Monitoring et automatisation dans Windows Azure (AZR204)</a> aux côtés d'Eric Craeymeersch et d'Arnaud Cleret . L'objectif de cette session était de présenter les différentes possibilités de monitoring et d'automatisation offertes par Windows Azure.
+
+Si vous souhaitez voir ou revoir cette session, la vidéo est disponible ci-dessous :
+
+<div style="width:100%;display:flex;justify-content:center;" ><object type="application/x-silverlight-2" data="data:application/x-silverlight-2," width="640" height="360" ><param name="source" value="https://www.microsoft.com/global/fr-fr/showcase/RichMedia/player-fr.xap" /><param name="initParams" value="Culture=fr-FR,Uuid=aa540def-081d-4603-882c-3143ee954d80,Autoplay=False,ShowMarketingOverlay=false,MiscControls=FullScreen;Detached,ShowMenu=True,Tabs=Embed;Email;Share;Info,VideoUrl=https://microsoft.com/showcase/fr/fr/details/aa540def-081d-4603-882c-3143ee954d80,Mode=Player" /><param name="enableHtmlAccess" value="true" /><param name="allowHtmlPopupwindow" value="true" /><param name="background" value="#FF000000" /><param name="minRuntimeVersion" value="4.0.50401.0" /><param name="autoUpgrade" value="true" /><iframe  src='https://www.microsoft.com/showcase/video.aspx?uuid=aa540def-081d-4603-882c-3143ee954d80&locale=fr-FR' border='0' width='100%' height='100%'></iframe></object></div>
+
+<script type="text/javascript">
+document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'><\/script>");
+</script>
+
+Les vidéos des autres sessions des techdays 2013 sont aussi disponibles :
+<a href="https://www.microsoft.com/france/mstechdays/programmes/2013/recherche-sessions.aspx" target="_blank">https://www.microsoft.com/france/mstechdays/programmes/2013/recherche-sessions.aspx</a>
+
+Bon visionnage !
+
+
